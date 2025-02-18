@@ -13,13 +13,27 @@
             padding: 20px;
             color: #333;
         }
-        h1, h2 { color: #2c3e50; }
-        .faq-item { margin-bottom: 30px; }
+        h1, h2 { 
+            color: #2c3e50; 
+            margin-top: 40px;
+        }
+        .faq-item { 
+            margin-bottom: 30px; 
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
         .contact { 
             background: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
             margin-top: 40px;
+        }
+        .version-info {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
         }
         @media (prefers-color-scheme: dark) {
             body { 
@@ -27,15 +41,30 @@
                 color: #e0e0e0;
             }
             h1, h2 { color: #60a5fa; }
-            .contact { background: #2d2d2d; }
+            .faq-item, .contact { background: #2d2d2d; }
+            .version-info { 
+                background: #2d2d2d;
+                border: 1px solid #60a5fa;
+            }
         }
     </style>
 </head>
 <body>
     <h1>CluckOut Support</h1>
     
+    <div class="version-info">
+        <h2>What's New in Version 1.1.0</h2>
+        <ul>
+            <li>Per-entry hourly rate tracking</li>
+            <li>Enhanced export features with success/error alerts</li>
+            <li>Improved notification system</li>
+            <li>Better accessibility support</li>
+            <li>Alternating row colors for better readability</li>
+        </ul>
+    </div>
+
     <section>
-        <h2>Frequently Asked Questions</h2>
+        <h2>Time Tracking Basics</h2>
         
         <div class="faq-item">
             <h3>How do I track my time?</h3>
@@ -51,12 +80,54 @@
                3. Modify the check-in/check-out times<br>
                4. Tap Save</p>
         </div>
+    </section>
+
+    <section>
+        <h2>Hourly Rates & Earnings</h2>
+
+        <div class="faq-item">
+            <h3>How do hourly rates work?</h3>
+            <p>• Each time entry can have its own hourly rate<br>
+               • Set your default rate in Settings<br>
+               • Modify individual entry rates by editing the entry</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How are earnings calculated?</h3>
+            <p>• Earnings are calculated based on each entry's specific rate<br>
+               • Active entries use your current default rate<br>
+               • Completed entries maintain their historical rates</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Data Management</h2>
 
         <div class="faq-item">
             <h3>How do I export my time records?</h3>
             <p>1. Go to Settings<br>
                2. Select "Records Management"<br>
                3. Tap "Export Records"</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I import records?</h3>
+            <p>1. Go to Settings > Records Management<br>
+               2. Tap "Import History"<br>
+               3. Select your CSV file</p>
+            <p><strong>Note:</strong> CSV file should include check-in time, check-out time, and optionally hourly rate.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Notifications & Reminders</h2>
+
+        <div class="faq-item">
+            <h3>How do I set up reminders?</h3>
+            <p>1. Go to Settings<br>
+               2. Select "Reminders"<br>
+               3. Enable reminders and set your preferred times<br>
+               4. Allow notifications when prompted</p>
         </div>
     </section>
 
