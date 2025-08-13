@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,72 +14,122 @@
             padding: 20px;
             color: #333;
         }
-        h1, h2 { 
-            color: #2c3e50; 
+
+        h1,
+        h2 {
+            color: #2c3e50;
             margin-top: 40px;
         }
-        .faq-item { 
-            margin-bottom: 30px; 
+
+        .faq-item {
+            margin-bottom: 30px;
             background: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
         }
-        .contact { 
+
+        .contact {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
             margin-top: 40px;
         }
+
         .version-info {
             background: #e3f2fd;
             padding: 20px;
             border-radius: 8px;
             margin: 20px 0;
         }
+
+        .feature-highlight {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
         @media (prefers-color-scheme: dark) {
-            body { 
+            body {
                 background: #1a1a1a;
                 color: #e0e0e0;
             }
-            h1, h2 { color: #60a5fa; }
-            .faq-item, .contact { background: #2d2d2d; }
-            .version-info { 
+
+            h1,
+            h2 {
+                color: #60a5fa;
+            }
+
+            .faq-item,
+            .contact {
+                background: #2d2d2d;
+            }
+
+            .version-info {
                 background: #2d2d2d;
                 border: 1px solid #60a5fa;
+            }
+
+            .feature-highlight {
+                background: #2d2d2d;
+                border-left-color: #ffc107;
             }
         }
     </style>
 </head>
+
 <body>
     <h1>CluckOut Support</h1>
-    
+
     <div class="version-info">
-        <h2>What's New in Version 1.1.0</h2>
+        <h2>What's New in Version 1.2.0</h2>
+        <div class="feature-highlight">
+            <strong>🎯 New Batch Rate Update Feature</strong>
+            <p>Update hourly rates across multiple time entries at once! Choose from predefined periods (last 7/30/90
+                days, this month/year) or set custom date ranges.</p>
+        </div>
         <ul>
-            <li>Per-entry hourly rate tracking</li>
-            <li>Enhanced export features with success/error alerts</li>
-            <li>Improved notification system</li>
-            <li>Better accessibility support</li>
-            <li>Alternating row colors for better readability</li>
+            <li>Second-level precision for more accurate time tracking</li>
+            <li>Enhanced navigation with improved toolbar integration</li>
+            <li>Better error handling and user feedback</li>
+            <li>Improved accessibility and dynamic type support</li>
+            <li>Enhanced date navigation and time records management</li>
+            <li>Comprehensive UI improvements and consistency updates</li>
         </ul>
     </div>
 
     <section>
         <h2>Time Tracking Basics</h2>
-        
+
         <div class="faq-item">
             <h3>How do I track my time?</h3>
             <p>1. Open CluckOut<br>
-               2. Tap "Check In" when you start working<br>
-               3. Tap "Check Out" when you finish</p>
+                2. Tap "Clock In" when you start working<br>
+                3. Tap "Clock Out" when you finish</p>
+            <p><strong>Enhanced in 1.2.0:</strong> Time tracking now includes second-level precision for more accurate
+                measurements. The app displays time with greater precision for better accuracy.</p>
         </div>
 
         <div class="faq-item">
             <h3>How do I edit a time entry?</h3>
             <p>1. Go to the Summary tab<br>
-               2. Tap on the entry you want to edit<br>
-               3. Modify the check-in/check-out times<br>
-               4. Tap Save</p>
+                2. Tap on the entry you want to edit<br>
+                3. Modify the clock-in/clock-out times with second-level precision<br>
+                4. Tap Save</p>
+            <p><strong>Improved:</strong> Edit interface now supports more precise time adjustments and provides better
+                validation.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I add a manual time entry?</h3>
+            <p>1. Go to the Summary tab<br>
+                2. Tap the "+" button<br>
+                3. Enter clock-in and clock-out times with second-level precision<br>
+                4. Set the hourly rate for this entry<br>
+                5. Tap Save</p>
+            <p><strong>Enhanced:</strong> Manual entry now supports more precise time input and better rate management.
+            </p>
         </div>
     </section>
 
@@ -88,15 +139,43 @@
         <div class="faq-item">
             <h3>How do hourly rates work?</h3>
             <p>• Each time entry can have its own hourly rate<br>
-               • Set your default rate in Settings<br>
-               • Modify individual entry rates by editing the entry</p>
+                • Set your default rate in Settings<br>
+                • Modify individual entry rates by editing the entry<br>
+                • Rates are preserved historically for completed entries</p>
+            <p><strong>Enhanced:</strong> Better rate validation and consistent formatting across all views.</p>
         </div>
 
         <div class="faq-item">
             <h3>How are earnings calculated?</h3>
             <p>• Earnings are calculated based on each entry's specific rate<br>
-               • Active entries use your current default rate<br>
-               • Completed entries maintain their historical rates</p>
+                • Active entries use your current default rate<br>
+                • Completed entries maintain their historical rates<br>
+                • Real-time updates for active entries</p>
+            <p><strong>Improved:</strong> More accurate calculations with better precision and real-time updates.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I update rates for multiple entries?</h3>
+            <p><strong>New Batch Rate Update Feature:</strong><br>
+                1. Go to Settings > Hourly Rate<br>
+                2. Tap "Batch Rate Update"<br>
+                3. Enter your new rate<br>
+                4. Select a time period (last 7/30/90 days, this month/year, or custom)<br>
+                5. Preview current rates before updating<br>
+                6. Tap "Update Rates" to apply changes</p>
+            <p>This feature allows you to quickly update rates for all entries within a specific time period, perfect
+                for when your pay rate changes!</p>
+            <p><strong>Features:</strong> Preview functionality, comprehensive error handling, and immediate UI updates
+                after changes.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I set my default hourly rate?</h3>
+            <p>1. Go to Settings<br>
+                2. Select "Hourly Rate"<br>
+                3. Enter your rate (supports up to 2 decimal places)<br>
+                4. The rate will be applied to new entries automatically</p>
+            <p><strong>Enhanced:</strong> Better input validation and formatting for consistent rate entry.</p>
         </div>
     </section>
 
@@ -106,16 +185,39 @@
         <div class="faq-item">
             <h3>How do I export my time records?</h3>
             <p>1. Go to Settings<br>
-               2. Select "Records Management"<br>
-               3. Tap "Export Records"</p>
+                2. Select "Records Management"<br>
+                3. Tap "Export Records"</p>
+            <p><strong>Enhanced in 1.2.0:</strong> Export now includes hourly rates with second-level precision and
+                provides comprehensive success/error feedback with detailed alerts.</p>
         </div>
 
         <div class="faq-item">
             <h3>How do I import records?</h3>
             <p>1. Go to Settings > Records Management<br>
-               2. Tap "Import History"<br>
-               3. Select your CSV file</p>
-            <p><strong>Note:</strong> CSV file should include check-in time, check-out time, and optionally hourly rate.</p>
+                2. Tap "Import History"<br>
+                3. Select your CSV file</p>
+            <p><strong>Enhanced:</strong> Import now supports hourly rates and provides better validation for imported
+                data.</p>
+            <p><strong>Note:</strong> CSV file should include clock-in time, clock-out time, and optionally hourly rate.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I delete all my records?</h3>
+            <p>1. Go to Settings > Records Management<br>
+                2. Tap "Delete All Records"<br>
+                3. Confirm the action</p>
+            <p><strong>Enhanced:</strong> Improved error handling and success feedback with detailed alerts for delete
+                operations.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I navigate through my time records?</h3>
+            <p>1. Go to the Summary tab<br>
+                2. Use the date navigator to browse different time periods<br>
+                3. Tap on time frame options to filter records</p>
+            <p><strong>Improved in 1.2.0:</strong> Enhanced date navigation with better browsing experience and improved
+                time frame selection.</p>
         </div>
     </section>
 
@@ -125,9 +227,92 @@
         <div class="faq-item">
             <h3>How do I set up reminders?</h3>
             <p>1. Go to Settings<br>
-               2. Select "Reminders"<br>
-               3. Enable reminders and set your preferred times<br>
-               4. Allow notifications when prompted</p>
+                2. Select "Reminders"<br>
+                3. Enable reminders and set your preferred times<br>
+                4. Allow notifications when prompted</p>
+            <p><strong>Enhanced:</strong> Improved notification permission handling and better user feedback for
+                notification status.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I manage my reminders?</h3>
+            <p>1. Go to Settings > Reminders<br>
+                2. View your current reminder settings<br>
+                3. Add new reminders or modify existing ones<br>
+                4. Enable/disable reminders as needed</p>
+            <p><strong>Improved:</strong> Streamlined reminder setup process with better interface organization.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Navigation & Interface</h2>
+
+        <div class="faq-item">
+            <h3>What's new in the interface?</h3>
+            <p><strong>Version 1.2.0 Improvements:</strong><br>
+                • Enhanced navigation with improved toolbar integration<br>
+                • Better accessibility support with dynamic type<br>
+                • Improved date navigation for easier browsing<br>
+                • More consistent UI elements across the app<br>
+                • Better error messages and user feedback</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I use the improved navigation?</h3>
+            <p>• Action buttons are now located in toolbars for better accessibility<br>
+                • Consistent navigation patterns across all views<br>
+                • Simplified sheet-based view presentation<br>
+                • Better button organization and placement</p>
+            <p><strong>Enhanced:</strong> NavigationStack migration provides smoother transitions and better user
+                experience.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What accessibility improvements are available?</h3>
+            <p>• Dynamic type support with controlled maximum sizes<br>
+                • Better contrast and readability<br>
+                • Improved screen reader compatibility<br>
+                • Enhanced focus management</p>
+            <p><strong>New:</strong> Font sizes are now limited using UIFontMetrics to maintain layout consistency while
+                supporting accessibility features.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I view my statistics?</h3>
+            <p>1. Go to the Summary tab<br>
+                2. View your time tracking statistics<br>
+                3. See estimated earnings based on your rates</p>
+            <p><strong>Enhanced:</strong> Statistics now calculate earnings using individual entry rates with improved
+                accuracy and real-time updates.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Troubleshooting</h2>
+
+        <div class="faq-item">
+            <h3>What if my time entries aren't saving correctly?</h3>
+            <p>• Ensure you have sufficient storage space on your device<br>
+                • Try restarting the app<br>
+                • Check that you're connected to the internet for cloud sync (if enabled)</p>
+            <p><strong>Enhanced:</strong> Better error handling and validation now prevent most data loss issues.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Why aren't my earnings calculating correctly?</h3>
+            <p>• Verify your hourly rate is set correctly in Settings<br>
+                • Check that individual entries have the correct rates<br>
+                • Ensure time entries have both clock-in and clock-out times</p>
+            <p><strong>Improved:</strong> More accurate calculations with better precision and real-time updates.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I reset my data if something goes wrong?</h3>
+            <p>1. Go to Settings > Records Management<br>
+                2. Tap "Delete All Records"<br>
+                3. Confirm the action</p>
+            <p><strong>Note:</strong> This action cannot be undone, so make sure to export your data first if needed.
+            </p>
         </div>
     </section>
 
@@ -136,4 +321,5 @@
         <p>For support inquiries, please email: hsudev138@gmail.com</p>
     </div>
 </body>
+
 </html>
