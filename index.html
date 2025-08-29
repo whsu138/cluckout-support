@@ -83,6 +83,60 @@
     <h1>CluckOut Support</h1>
 
     <div class="version-info">
+        <h2>What's New in Version 1.3.1</h2>
+        <div class="feature-highlight">
+            <strong>📊 Enhanced Time Period Export Support</strong>
+            <p>Export your time records with flexible time period filtering! Choose from predefined periods (last
+                7/30/90 days, this month/year) or set custom date ranges. Perfect for generating reports for specific
+                time periods.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>📋 Import/Export Summary System</strong>
+            <p>Get comprehensive feedback for all your data operations! View detailed statistics including record count,
+                total duration, and earnings for both import and export operations with real-time updates.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>🔧 Enhanced CSV Import Functionality</strong>
+            <p>Improved import system with better error handling and overnight shift support! The app now properly
+                handles records that span midnight and provides comprehensive debug logging for troubleshooting.</p>
+        </div>
+        <ul>
+            <li>Support for exporting records by time periods with "All Records" option</li>
+            <li>Real-time statistics including record count, total duration, and earnings</li>
+            <li>Fixed overnight shift import logic for records spanning midnight</li>
+            <li>Enhanced duplicate detection using static snapshot to prevent cascading issues</li>
+            <li>Comprehensive debug logging for import troubleshooting</li>
+            <li>Support for mixed time formats in CSV files</li>
+            <li>Unified export interface with batch rate update functionality</li>
+            <li>Performance optimizations and reduced console clutter</li>
+            <li>Fixed export summary display and batch rate update preview</li>
+        </ul>
+    </div>
+
+    <div class="version-info">
+        <h2>What's New in Version 1.2.2</h2>
+        <div class="feature-highlight">
+            <strong>🔔 Enhanced Reminder Notification System</strong>
+            <p>Complete overhaul of notification permission handling with improved user experience! The app now provides
+                better guidance for notification setup and ensures reminders work reliably.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>🎯 Improved Reminder Toggle Behavior</strong>
+            <p>Better reminder management with automatic permission checking. The toggle is now disabled when
+                notification permission is not granted, preventing confusion and ensuring reminders only work when
+                properly configured.</p>
+        </div>
+        <ul>
+            <li>Enhanced notification permission request flow with better user guidance</li>
+            <li>Persistent warning messages when notification permission is denied</li>
+            <li>Conditional UI buttons based on permission status</li>
+            <li>Automatic switch management based on permission status</li>
+            <li>Comprehensive debug logging for notification state tracking</li>
+            <li>Better visual feedback for permission status</li>
+        </ul>
+    </div>
+
+    <div class="version-info">
         <h2>What's New in Version 1.2.0</h2>
         <div class="feature-highlight">
             <strong>🎯 New Batch Rate Update Feature</strong>
@@ -241,10 +295,23 @@
             <h3>How do I set up reminders?</h3>
             <p>1. Go to Settings<br>
                 2. Select "Reminders"<br>
-                3. Enable reminders and set your preferred times<br>
-                4. Allow notifications when prompted</p>
-            <p><strong>Enhanced:</strong> Improved notification permission handling and better user feedback for
-                notification status.</p>
+                3. If notification permission is not granted, tap "Request Notification Permission"<br>
+                4. Allow notifications when prompted<br>
+                5. Enable reminders and set your preferred times</p>
+            <p><strong>Enhanced in 1.2.2:</strong> Improved notification permission handling with better user guidance.
+                The app now provides clear instructions and buttons to help you enable notifications properly.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What if notification permission is denied?</h3>
+            <p>If notification permission is denied, the reminder toggle will be disabled and you'll see a warning
+                message. To fix this:</p>
+            <p>1. Tap "Open Settings" in the Reminders section<br>
+                2. Navigate to CluckOut in iOS Settings<br>
+                3. Enable "Allow Notifications"<br>
+                4. Return to the app and try enabling reminders again</p>
+            <p><strong>New in 1.2.2:</strong> The app now provides clear guidance and direct access to iOS Settings when
+                permission is denied.</p>
         </div>
 
         <div class="faq-item">
@@ -253,7 +320,19 @@
                 2. View your current reminder settings<br>
                 3. Add new reminders or modify existing ones<br>
                 4. Enable/disable reminders as needed</p>
-            <p><strong>Improved:</strong> Streamlined reminder setup process with better interface organization.</p>
+            <p><strong>Improved in 1.2.2:</strong> Better reminder management with automatic permission checking and
+                clearer status indicators. The toggle is now disabled when notification permission is not granted,
+                preventing confusion.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Why is the reminder toggle disabled?</h3>
+            <p>The reminder toggle is disabled when notification permission is not granted. This ensures that reminders
+                only work when properly configured. To enable it:</p>
+            <p>• If you haven't granted permission yet: Tap "Request Notification Permission"<br>
+                • If permission was denied: Tap "Open Settings" to enable notifications in iOS Settings</p>
+            <p><strong>New in 1.2.2:</strong> Automatic permission checking prevents reminders from being enabled
+                without proper notification setup.</p>
         </div>
     </section>
 
