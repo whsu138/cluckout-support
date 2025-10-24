@@ -83,6 +83,53 @@
     <h1>CluckOut Support</h1>
 
     <div class="version-info">
+        <h2>What's New in Version 1.4.0</h2>
+        <div class="feature-highlight">
+            <strong>🎯 Enhanced Time Tracking Experience</strong>
+            <p>Major upgrade to the time tracking interface with meaningful animations and visual feedback! Enjoy logo
+                pulse animations during active tracking, breathing button effects, and real-time duration updates with
+                estimated pay display.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>📊 Advanced Data Management</strong>
+            <p>Comprehensive import/export system with progress indicators and enhanced error handling! Import CSV files
+                with legacy format support, export with flexible time period filtering, and enjoy clean progress
+                overlays for all data operations.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>💰 Category-Specific Rate Management</strong>
+            <p>Set individual hourly rates for different work categories! Premium feature that allows you to track
+                different rates for different types of work, with enhanced batch rate updates and category filtering
+                options.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>🔔 Smart Reminder System</strong>
+            <p>Complete reminder management with full CRUD operations! Create repeatable reminders, edit existing ones,
+                and enjoy automatic notification cleanup with enhanced permission management.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>🎨 UI/UX Improvements</strong>
+            <p>Interactive date navigation with DatePickers, standardized picker components, and enhanced navigation bar
+                appearance. Fixed dark mode issues and improved overall user experience across all views.</p>
+        </div>
+        <ul>
+            <li>Logo pulse animation and breathing button effects during active tracking</li>
+            <li>Real-time duration updates with estimated pay display and haptic feedback</li>
+            <li>CSV import/export progress indicators with clean overlay design</li>
+            <li>Legacy format support for CSV import with overnight shift handling</li>
+            <li>Flexible export options with time period filtering (last 7/30/90 days, custom periods)</li>
+            <li>Category-specific hourly rates with premium feature gating</li>
+            <li>Enhanced batch rate updates with category filtering options</li>
+            <li>Interactive date navigation with DatePickers in Day, Week, and Month views</li>
+            <li>Standardized picker components with dropdown interface</li>
+            <li>Fixed navigation title color issues in dark mode</li>
+            <li>Enhanced Core Data operations with comprehensive error handling</li>
+            <li>iOS 26.0 compatibility fixes and improved keyboard input handling</li>
+            <li>Comprehensive test suite with 0 failures and enhanced reliability</li>
+        </ul>
+    </div>
+
+    <div class="version-info">
         <h2>What's New in Version 1.3.2</h2>
         <div class="feature-highlight">
             <strong>🔔 Complete Reminder System Overhaul</strong>
@@ -108,7 +155,6 @@
             <li>Enhanced reminder creation with day selection interface</li>
             <li>Complete editing of existing reminders with preserved notification associations</li>
             <li>Individual enable/disable toggles for each reminder</li>
-            <li>One-time reminders automatically disable after notification delivery</li>
             <li>Improved UI with separated tap areas to prevent interaction conflicts</li>
             <li>Enhanced notification scheduling and lifecycle management</li>
             <li>Better gesture handling and touch target separation</li>
@@ -201,8 +247,9 @@
             <p>1. Open CluckOut<br>
                 2. Tap "Clock In" when you start working<br>
                 3. Tap "Clock Out" when you finish</p>
-            <p><strong>Enhanced in 1.2.0:</strong> Time tracking now includes second-level precision for more accurate
-                measurements. The app displays time with greater precision for better accuracy.</p>
+            <p><strong>Enhanced in 1.4.0:</strong> Time tracking now includes meaningful animations with logo pulse
+                effects, breathing button animations, and real-time duration updates with estimated pay display. Enjoy
+                haptic feedback on supported devices for a more engaging experience.</p>
         </div>
 
         <div class="faq-item">
@@ -250,17 +297,18 @@
 
         <div class="faq-item">
             <h3>How do I update rates for multiple entries?</h3>
-            <p><strong>New Batch Rate Update Feature:</strong><br>
+            <p><strong>Enhanced Batch Rate Update Feature:</strong><br>
                 1. Go to Settings > Hourly Rate<br>
                 2. Tap "Batch Rate Update"<br>
                 3. Enter your new rate<br>
                 4. Select a time period (last 7/30/90 days, this month/year, or custom)<br>
-                5. Preview current rates before updating<br>
-                6. Tap "Update Rates" to apply changes</p>
-            <p>This feature allows you to quickly update rates for all entries within a specific time period, perfect
-                for when your pay rate changes!</p>
-            <p><strong>Features:</strong> Preview functionality, comprehensive error handling, and immediate UI updates
-                after changes.</p>
+                5. Choose category scope (All Categories, Selected Categories, or Specific Category)<br>
+                6. Preview current rates before updating<br>
+                7. Tap "Update Rates" to apply changes</p>
+            <p>This feature allows you to quickly update rates for all entries within a specific time period and
+                category scope, perfect for when your pay rate changes!</p>
+            <p><strong>Enhanced in 1.4.0:</strong> Category-specific filtering, preview functionality, comprehensive
+                error handling, and immediate UI updates after changes.</p>
         </div>
 
         <div class="faq-item">
@@ -271,6 +319,19 @@
                 4. The rate will be applied to new entries automatically</p>
             <p><strong>Enhanced:</strong> Better input validation and formatting for consistent rate entry.</p>
         </div>
+
+        <div class="faq-item">
+            <h3>How do I set category-specific rates?</h3>
+            <p><strong>New in 1.4.0 - Premium Feature:</strong><br>
+                1. Go to Settings > Manage Categories<br>
+                2. Select a category to edit<br>
+                3. Set a specific hourly rate for that category<br>
+                4. Categories without specific rates will use your global rate</p>
+            <p>This feature allows you to track different rates for different types of work. For example, you might
+                charge $50/hour for consulting but $25/hour for administrative tasks.</p>
+            <p><strong>Features:</strong> Category-specific rate management, enhanced batch rate updates with category
+                filtering, and automatic fallback to global rates.</p>
+        </div>
     </section>
 
     <section>
@@ -280,27 +341,32 @@
             <h3>How do I export my time records?</h3>
             <p>1. Go to Settings<br>
                 2. Select "Records Management"<br>
-                3. Tap "Export Records"</p>
-            <p><strong>Enhanced in 1.2.0:</strong> Export now includes hourly rates with second-level precision and
-                provides comprehensive success/error feedback with detailed alerts.</p>
+                3. Tap "Export Records"<br>
+                4. Choose time period filtering (last 7/30/90 days, this month/year, custom periods)<br>
+                5. Select categories to include in export</p>
+            <p><strong>Enhanced in 1.4.0:</strong> Export now includes flexible time period filtering, progress
+                indicators during export, and category-specific data. Enjoy clean progress overlays and comprehensive
+                error handling.</p>
         </div>
 
         <div class="faq-item">
             <h3>How do I import records?</h3>
             <p>1. Go to Settings > Records Management<br>
                 2. Tap "Import History"<br>
-                3. Select your CSV file</p>
-            <p><strong>Enhanced:</strong> Import now supports hourly rates and provides better validation for imported
-                data.</p>
-            <p><strong>New Legacy Support:</strong> The app automatically detects and supports multiple time formats:
+                3. Select your CSV file<br>
+                4. Watch progress indicators during import</p>
+            <p><strong>Enhanced in 1.4.0:</strong> Import now includes progress indicators, enhanced error handling, and
+                overnight shift support. Enjoy clean progress overlays and comprehensive validation.</p>
+            <p><strong>Legacy Format Support:</strong> The app automatically detects and supports multiple time formats:
             </p>
             <ul>
                 <li><strong>Legacy format:</strong> HH:mm (e.g., 09:30, 14:45)</li>
                 <li><strong>Current format:</strong> HH:mm:ss (e.g., 09:30:15, 14:45:30)</li>
                 <li><strong>Mixed format:</strong> You can import files containing both formats</li>
+                <li><strong>Overnight shifts:</strong> Properly handles records that span midnight</li>
             </ul>
             <p><strong>Note:</strong> CSV file should include clock-in time, clock-out time, and optionally hourly rate.
-                The app will automatically handle format detection and duplicate prevention.</p>
+                The app will automatically handle format detection, duplicate prevention, and overnight shift logic.</p>
         </div>
 
         <div class="faq-item">
@@ -366,7 +432,6 @@
             <p>• Choose from weekdays, weekends, or custom day combinations<br>
                 • The app intelligently displays your schedule (e.g., "Weekdays", "Mon, Wed, Fri")<br>
                 • Use "Select All" and "Clear All" buttons for convenient day selection<br>
-                • One-time reminders (no repeatable days) automatically disable after notification delivery<br>
                 • Edit repeatable days at any time with automatic notification rescheduling</p>
         </div>
 
@@ -396,22 +461,24 @@
 
         <div class="faq-item">
             <h3>What's new in the interface?</h3>
-            <p><strong>Version 1.2.0 Improvements:</strong><br>
-                • Enhanced navigation with improved toolbar integration<br>
-                • Better accessibility support with dynamic type<br>
-                • Improved date navigation for easier browsing<br>
-                • More consistent UI elements across the app<br>
-                • Better error messages and user feedback</p>
+            <p><strong>Version 1.4.0 Improvements:</strong><br>
+                • Interactive date navigation with DatePickers in Day, Week, and Month views<br>
+                • Meaningful animations with logo pulse effects and breathing buttons<br>
+                • Standardized picker components with dropdown interface<br>
+                • Fixed navigation title color issues in dark mode<br>
+                • Enhanced haptic feedback on supported devices<br>
+                • Real-time duration updates with estimated pay display</p>
         </div>
 
         <div class="faq-item">
             <h3>How do I use the improved navigation?</h3>
-            <p>• Action buttons are now located in toolbars for better accessibility<br>
-                • Consistent navigation patterns across all views<br>
-                • Simplified sheet-based view presentation<br>
-                • Better button organization and placement</p>
-            <p><strong>Enhanced:</strong> NavigationStack migration provides smoother transitions and better user
-                experience.</p>
+            <p>• Interactive DatePickers in Day, Week, and Month views for direct date selection<br>
+                • Dual navigation options: arrow buttons for quick navigation + DatePicker for direct selection<br>
+                • Standardized dropdown pickers across all settings views<br>
+                • Enhanced navigation bar appearance with fixed dark mode issues<br>
+                • Smart disable logic prevents navigation beyond current date</p>
+            <p><strong>Enhanced in 1.4.0:</strong> Interactive date navigation with DatePickers, standardized picker
+                components, and improved navigation hierarchy management.</p>
         </div>
 
         <div class="faq-item">
