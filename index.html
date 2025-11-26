@@ -106,6 +106,46 @@
     <h1>CluckOut Support</h1>
 
     <div class="version-info">
+        <h2>What's New in Version 1.4.2</h2>
+        <div class="feature-highlight">
+            <strong>📅 Year Time Frame View</strong>
+            <p>New "Year" option added to Time Frame selector in Summary view! View your time records aggregated by
+                year, with all entries from January 1st to December 31st of the selected year. Includes consistent
+                navigation, filtering support, and quick navigation button to jump to current year.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>📊 Multiple Export Formats</strong>
+            <p>Export your time records in multiple formats for maximum compatibility! Choose from CSV (standard), CSV
+                (Excel-compatible with UTF-8 BOM), or JSON format. All formats maintain data integrity and support all
+                existing features including categories, time periods, and filtering.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>📥 Multiple Import Formats</strong>
+            <p>Enhanced import functionality with automatic format detection! The app now supports CSV, Excel (.xlsx,
+                .xls), and JSON file formats. Automatic format detection based on file extension ensures a seamless
+                import experience regardless of format.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>🔧 Bug Fixes & Improvements</strong>
+            <p>Fixed Excel import BOM handling for proper round-trip export/import, and updated format display names for
+                clarity to prevent user confusion about file types.</p>
+        </div>
+        <ul>
+            <li>Year view with all entries from January 1st to December 31st of selected year</li>
+            <li>Year date range displays in format "YYYY" (e.g., "2025")</li>
+            <li>Quick navigation button to jump to current year</li>
+            <li>CSV export (standard format)</li>
+            <li>CSV (Excel-compatible) with UTF-8 BOM encoding for optimal Excel compatibility</li>
+            <li>JSON format export with structured DataFrame-like schema for programmatic access</li>
+            <li>Automatic format detection for imports based on file extension</li>
+            <li>Excel import support (.xlsx, .xls) with UTF-8 BOM handling</li>
+            <li>JSON import with full data validation and DataFrame format support</li>
+            <li>Fixed Excel import BOM handling for proper round-trip functionality</li>
+            <li>Updated format display names for clarity and accuracy</li>
+        </ul>
+    </div>
+
+    <div class="version-info">
         <h2>What's New in Version 1.4.1</h2>
         <div class="feature-highlight">
             <strong>🗑️ Enhanced Clear Records Feature</strong>
@@ -408,9 +448,13 @@
             <p>1. Go to Settings<br>
                 2. Select "Records Management"<br>
                 3. Tap "Export Records"<br>
-                4. Choose time period filtering (last 7/30/90 days, this month/year, custom periods)<br>
-                5. Select categories to include in export</p>
-            <p><strong>Enhanced in 1.4.0:</strong> Export now includes flexible time period filtering, progress
+                4. Choose export format (CSV, CSV Excel-compatible, or JSON)<br>
+                5. Choose time period filtering (last 7/30/90 days, this month/year, custom periods)<br>
+                6. Select categories to include in export</p>
+            <p><strong>New in 1.4.2:</strong> Export now supports multiple formats! Choose from CSV (standard), CSV
+                (Excel-compatible with UTF-8 BOM), or JSON format. All formats maintain data integrity and support all
+                existing features.</p>
+            <p><strong>Enhanced in 1.4.0:</strong> Export includes flexible time period filtering, progress
                 indicators during export, and category-specific data. Enjoy clean progress overlays and comprehensive
                 error handling.</p>
         </div>
@@ -419,9 +463,12 @@
             <h3>How do I import records?</h3>
             <p>1. Go to Settings > Records Management<br>
                 2. Tap "Import History"<br>
-                3. Select your CSV file<br>
+                3. Select your file (CSV, Excel, or JSON)<br>
                 4. Watch progress indicators during import</p>
-            <p><strong>Enhanced in 1.4.0:</strong> Import now includes progress indicators, enhanced error handling, and
+            <p><strong>New in 1.4.2:</strong> Import now supports multiple file formats! The app automatically detects
+                the format based on file extension (.csv, .xlsx, .xls, .json). Supports CSV files, Excel-compatible
+                files with UTF-8 BOM handling, and JSON files with DataFrame format.</p>
+            <p><strong>Enhanced in 1.4.0:</strong> Import includes progress indicators, enhanced error handling, and
                 overnight shift support. Enjoy clean progress overlays and comprehensive validation.</p>
             <p><strong>Legacy Format Support:</strong> The app automatically detects and supports multiple time formats:
             </p>
@@ -431,7 +478,8 @@
                 <li><strong>Mixed format:</strong> You can import files containing both formats</li>
                 <li><strong>Overnight shifts:</strong> Properly handles records that span midnight</li>
             </ul>
-            <p><strong>Note:</strong> CSV file should include clock-in time, clock-out time, and optionally hourly rate.
+            <p><strong>Note:</strong> Import files should include clock-in time, clock-out time, and optionally hourly
+                rate.
                 The app will automatically handle format detection, duplicate prevention, and overnight shift logic.</p>
         </div>
 
@@ -455,7 +503,9 @@
             <h3>How do I navigate through my time records?</h3>
             <p>1. Go to the Summary tab<br>
                 2. Use the date navigator to browse different time periods<br>
-                3. Tap on time frame options to filter records</p>
+                3. Tap on time frame options to filter records (Day, Week, Month, or Year)</p>
+            <p><strong>New in 1.4.2:</strong> Added "Year" time frame option! View all entries from January 1st to
+                December 31st of the selected year with quick navigation to current year.</p>
             <p><strong>Improved in 1.2.0:</strong> Enhanced date navigation with better browsing experience and improved
                 time frame selection.</p>
         </div>
