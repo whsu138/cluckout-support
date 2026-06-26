@@ -106,6 +106,34 @@
     <h1>CluckOut Support</h1>
 
     <div class="version-info">
+        <h2>What's New in Version 1.5.0</h2>
+        <div class="feature-highlight">
+            <strong>☕ Break / Pause Timer</strong>
+            <p>Take a break while you're clocked in without losing your session! Tap "Take a Break" on the Clock tab to
+                pause your work timer, then tap "Resume Work" when you're ready. Your work duration stops during breaks,
+                and a live break timer shows how long you've been on break—so earnings reflect actual work time, not
+                lunch or coffee breaks.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>✏️ Manual Break Intervals</strong>
+            <p>When adding or editing a time entry, you can record one or more break intervals with start and end times.
+                The app shows total break time and work duration, and validates that breaks fall within your
+                check-in/check-out window.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>📊 CSV &amp; PDF Break Reporting</strong>
+            <p>Exported CSV files now include a Break Time column alongside work duration. Import preserves your
+                check-in and check-out times and break totals. Time records PDFs also show break time in the summary and
+                entry table when breaks are present.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>⌚ Apple Watch Break Support</strong>
+            <p>Start and end breaks from your Apple Watch while checked in. The watch shows on-break status, your work
+                duration, and live break time—synced with your iPhone in real time.</p>
+        </div>
+    </div>
+
+    <div class="version-info">
         <h2>What's New in Version 1.4.6</h2>
         <div class="feature-highlight">
             <strong>🖨️ Print Time Records as PDF</strong>
@@ -127,10 +155,12 @@
         </div>
     </div>
 
-    <div class="version-info">
-        <h2>What's New in Version 1.4.4</h2>
-        <div class="feature-highlight">
-            <strong>🎯 Categories for Everyone</strong>
+    <details>
+        <summary style="font-size: 1.2em; color: #2c3e50;">What's New in Version 1.4.4</summary>
+        <div class="version-info">
+            <h2>What's New in Version 1.4.4</h2>
+            <div class="feature-highlight">
+                <strong>🎯 Categories for Everyone</strong>
             <p>Categories are now available to all users! Create, edit, and customize categories without restrictions.
                 Organize your time entries by project, client, or task type. Set category-specific hourly rates and
                 track earnings by category. No premium features - categories are free for everyone!</p>
@@ -181,7 +211,8 @@
             <li>Fixed reminder scheduling status detection</li>
             <li>Fixed reminder validation to allow overnight ranges</li>
         </ul>
-    </div>
+        </div>
+    </details>
 
     <details>
         <summary style="font-size: 1.2em; color: #2c3e50;">What's New in Version 1.4.3</summary>
@@ -507,6 +538,33 @@
             <p><strong>New in 1.4.3:</strong> Full Apple Watch support allows you to track time from your wrist with
                 real-time synchronization between devices. Perfect for quick clock in/out without reaching for your
                 phone.</p>
+            <p><strong>New in 1.5.0:</strong> Take a break while clocked in without stopping your session. Tap "Take a
+                Break" to pause your work timer, then "Resume Work" when you're ready. Work duration automatically
+                excludes break time for accurate earnings.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I take a break while clocked in?</h3>
+            <p>1. Clock in as usual on the Clock tab<br>
+                2. Tap "Take a Break" to start an open-ended pause<br>
+                3. Your work timer stops and a live break timer shows elapsed break time<br>
+                4. Tap "Resume Work" when you're ready to continue<br>
+                5. Clock out when your session is complete—work duration excludes all break time</p>
+            <p><strong>New in 1.5.0:</strong> Breaks end only when you tap "Resume Work." There are no preset break
+                durations or automatic break-end alerts. Your earnings are based on work time, not total session
+                length.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I add breaks to a manual time entry?</h3>
+            <p>1. Go to the Summary tab and tap "+" to add an entry, or tap an existing entry to edit<br>
+                2. Set your check-in and check-out times<br>
+                3. In the Breaks section, add one or more break intervals with start and end times<br>
+                4. The app shows total break time and work duration as you edit<br>
+                5. Tap Save</p>
+            <p><strong>New in 1.5.0:</strong> Break intervals must fall within your check-in/check-out window. Work
+                duration is calculated as session time minus break time. Imported records with break totals show a
+                read-only break summary when editing (no interval history).</p>
         </div>
 
         <div class="faq-item">
@@ -548,7 +606,11 @@
             <p>• Earnings are calculated based on each entry's specific rate<br>
                 • Active entries use your current default rate<br>
                 • Completed entries maintain their historical rates<br>
-                • Real-time updates for active entries</p>
+                • Real-time updates for active entries<br>
+                • Work duration excludes break time—earnings reflect actual work time, not total session length</p>
+            <p><strong>New in 1.5.0:</strong> Break and pause time is subtracted from session duration before earnings
+                are calculated. Take a break while clocked in or record break intervals on manual entries for accurate
+                billing.</p>
             <p><strong>Improved:</strong> More accurate calculations with better precision and real-time updates.</p>
         </div>
 
@@ -605,6 +667,8 @@
             <p><strong>New in 1.4.2:</strong> Export now supports multiple formats! Choose from CSV (standard), CSV
                 (Excel-compatible with UTF-8 BOM), or JSON format. All formats maintain data integrity and support all
                 existing features.</p>
+            <p><strong>New in 1.5.0:</strong> CSV export now includes a Break Time column alongside work duration.
+                Break time and work duration are stored separately for accurate reporting.</p>
             <p><strong>Enhanced in 1.4.0:</strong> Export includes flexible time period filtering, progress
                 indicators during export, and category-specific data. Enjoy clean progress overlays and comprehensive
                 error handling.</p>
@@ -622,6 +686,8 @@
             <p><strong>New in 1.4.6:</strong> The PDF reflects your current period and category filter. No time records
                 for the selected period? The button is still available; the PDF will show the empty state for that
                 period.</p>
+            <p><strong>New in 1.5.0:</strong> PDFs now include total break time in the summary (when breaks are
+                present) and a Break Time column in the detailed entry table.</p>
         </div>
 
         <div class="faq-item">
@@ -633,6 +699,9 @@
             <p><strong>New in 1.4.2:</strong> Import now supports multiple file formats! The app automatically detects
                 the format based on file extension (.csv, .xlsx, .xls, .json). Supports CSV files, Excel-compatible
                 files with UTF-8 BOM handling, and JSON files with DataFrame format.</p>
+            <p><strong>New in 1.5.0:</strong> CSV import preserves check-in and check-out times when a Break Time
+                column is present (no recalculation from duration). Legacy CSV files without a Break Time column still
+                import correctly. Imported records with break totals show a read-only break summary when editing.</p>
             <p><strong>Enhanced in 1.4.0:</strong> Import includes progress indicators, enhanced error handling, and
                 overnight shift support. Enjoy clean progress overlays and comprehensive validation.</p>
             <p><strong>Legacy Format Support:</strong> The app automatically detects and supports multiple time formats:
@@ -749,6 +818,12 @@
 
         <div class="faq-item">
             <h3>What's new in the interface?</h3>
+            <p><strong>Version 1.5.0 Improvements:</strong><br>
+                • Take a break while clocked in without stopping your session<br>
+                • Manual break intervals when adding or editing time entries<br>
+                • Work duration automatically excludes break time for accurate earnings<br>
+                • CSV export/import with Break Time column; PDF reports include break time<br>
+                • Apple Watch break controls with on-break status and live break timer</p>
             <p><strong>Version 1.4.4 Improvements:</strong><br>
                 • Ad banner layout optimized for seamless integration with navigation<br>
                 • Ad-safe padding added to forms and floating action buttons<br>
@@ -813,6 +888,20 @@
                 5. Your status syncs automatically with your iPhone in real-time</p>
             <p><strong>Features:</strong> Real-time duration display, connection status indicator, automatic
                 synchronization, and error handling with user-friendly messages.</p>
+            <p><strong>New in 1.5.0:</strong> Take a break and resume work directly from your Apple Watch while checked
+                in. The watch shows on-break status (orange), work duration, and live break time synced with your
+                iPhone.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I take a break from Apple Watch?</h3>
+            <p>1. Clock in on your iPhone or Apple Watch<br>
+                2. While checked in, tap "Take a Break" on your Apple Watch<br>
+                3. The watch shows on-break status, work duration, and live break time<br>
+                4. Tap "Resume Work" on your watch when you're ready to continue<br>
+                5. Clock out when your session is complete</p>
+            <p><strong>New in 1.5.0:</strong> Break controls sync in real time between iPhone and Apple Watch. Work
+                duration on the watch reflects time minus breaks, matching your iPhone.</p>
         </div>
 
         <div class="faq-item">
