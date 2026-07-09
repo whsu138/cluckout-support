@@ -106,6 +106,44 @@
     <h1>CluckOut Support</h1>
 
     <div class="version-info">
+        <h2>What's New in Version 1.5.2</h2>
+        <div class="feature-highlight">
+            <strong>⌚ Apple Watch Smart Stack Widget</strong>
+            <p>Add CluckOut to your Apple Watch Smart Stack for quick access. Tap the widget to open the CluckOut app on
+                your wrist—perfect when you want to clock in, take a break, or check your session without hunting
+                through your apps. Available in rectangular and circular Smart Stack layouts on watchOS 10 and later.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>⌨️ Easier Hourly Rate Entry</strong>
+            <p>Editing hourly rates is smoother across the app. A Done button appears above the number pad when you
+                enter rates in Settings, category rates, batch rate updates, and manual add or edit entry forms.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>🧭 Consistent Form Navigation</strong>
+            <p>Add Entry, Edit Entry, batch rate updates, category rates, export, and clear records now use the same
+                title-bar layout as Add Category—primary action on the right with an X to dismiss. Export and Clear
+                moved from the bottom of the screen to Export and Clear in the navigation bar.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>📱 Smarter Ad Banner During Rate Entry</strong>
+            <p>When you edit hourly rates with the number pad, the ad banner temporarily hides so it does not cover the
+                keyboard or Done button. The banner returns when you tap Done.</p>
+        </div>
+    </div>
+
+    <div class="version-info">
+        <h2>What's New in Version 1.5.1</h2>
+        <div class="feature-highlight">
+            <strong>📄 Customize PDF Export Columns</strong>
+            <p>Choose which columns appear when you print or share time records as PDF. Open Settings → PDF export
+                columns to show or hide Date, Clock In, Clock Out, Duration, Break Time, and Category. Your choices are
+                saved automatically and apply the next time you export from Summary. Related summary sections (such as
+                total time, break time, or category breakdown) are hidden when their matching column is turned
+                off—so your PDF stays focused on what you need.</p>
+        </div>
+    </div>
+
+    <div class="version-info">
         <h2>What's New in Version 1.5.0</h2>
         <div class="feature-highlight">
             <strong>☕ Break / Pause Timer</strong>
@@ -133,27 +171,33 @@
         </div>
     </div>
 
-    <div class="version-info">
-        <h2>What's New in Version 1.4.6</h2>
-        <div class="feature-highlight">
-            <strong>🖨️ Print Time Records as PDF</strong>
-            <p>You can now generate and share your time records as a PDF from the Summary screen. Use the "Print time
-                records as PDF" button in the time records section to create a PDF that includes the current time frame
-                (day, week, month, or year), date range, and your category filter if one is selected. The PDF shows a
-                summary with total duration and earnings, a category breakdown table, and a detailed entry table
-                (check-in, check-out, duration, and category). Use the share sheet to save the PDF to Files or share it
-                with other apps.</p>
+    <details>
+        <summary style="font-size: 1.2em; color: #2c3e50;">What's New in Version 1.4.6</summary>
+        <div class="version-info">
+            <h2>What's New in Version 1.4.6</h2>
+            <div class="feature-highlight">
+                <strong>🖨️ Print Time Records as PDF</strong>
+                <p>You can now generate and share your time records as a PDF from the Summary screen. Use the "Print time
+                    records as PDF" button in the time records section to create a PDF that includes the current time
+                    frame (day, week, month, or year), date range, and your category filter if one is selected. The PDF
+                    shows a summary with total duration and earnings, a category breakdown table, and a detailed entry
+                    table (check-in, check-out, duration, and category). Use the share sheet to save the PDF to Files or
+                    share it with other apps.</p>
+            </div>
         </div>
-    </div>
+    </details>
 
-    <div class="version-info">
-        <h2>What's New in Version 1.4.5</h2>
-        <div class="feature-highlight">
-            <strong>🔧 Bug Fixes &amp; Improvements</strong>
-            <p>Improved build and test reliability for Xcode Cloud. Various under-the-hood improvements and
-                documentation updates.</p>
+    <details>
+        <summary style="font-size: 1.2em; color: #2c3e50;">What's New in Version 1.4.5</summary>
+        <div class="version-info">
+            <h2>What's New in Version 1.4.5</h2>
+            <div class="feature-highlight">
+                <strong>🔧 Bug Fixes &amp; Improvements</strong>
+                <p>Improved build and test reliability for Xcode Cloud. Various under-the-hood improvements and
+                    documentation updates.</p>
+            </div>
         </div>
-    </div>
+    </details>
 
     <details>
         <summary style="font-size: 1.2em; color: #2c3e50;">What's New in Version 1.4.4</summary>
@@ -572,7 +616,9 @@
             <p>1. Go to the Summary tab<br>
                 2. Tap on the entry you want to edit<br>
                 3. Modify the clock-in/clock-out times with second-level precision<br>
-                4. Tap Save</p>
+                4. Tap Save in the navigation bar</p>
+            <p><strong>New in 1.5.2:</strong> Edit Entry uses a title-bar Save button with an X to dismiss. Rate fields
+                show a Done button above the decimal pad.</p>
             <p><strong>Improved:</strong> Edit interface now supports more precise time adjustments and provides better
                 validation.</p>
         </div>
@@ -582,8 +628,10 @@
             <p>1. Go to the Summary tab<br>
                 2. Tap the "+" button<br>
                 3. Enter clock-in and clock-out times with second-level precision<br>
-                4. Set the hourly rate for this entry<br>
-                5. Tap Save</p>
+                4. Set the hourly rate for this entry (tap Done above the number pad when finished)<br>
+                5. Tap Add in the navigation bar to save</p>
+            <p><strong>New in 1.5.2:</strong> Add Entry uses a title-bar Add button with an X to dismiss, matching
+                other forms. Rate fields show a Done button above the decimal pad.</p>
             <p><strong>Enhanced:</strong> Manual entry now supports more precise time input and better rate management.
             </p>
         </div>
@@ -623,9 +671,11 @@
                 4. Select a time period (last 7/30/90 days, this month/year, or custom)<br>
                 5. Choose category scope (All Categories, Selected Categories, or Specific Category)<br>
                 6. Preview current rates before updating<br>
-                7. Tap "Update Rates" to apply changes</p>
+                7. Tap "Update Rates" in the navigation bar to apply changes</p>
             <p>This feature allows you to quickly update rates for all entries within a specific time period and
                 category scope, perfect for when your pay rate changes!</p>
+            <p><strong>New in 1.5.2:</strong> Batch Rate Update uses a title-bar Update button with an X to dismiss. The
+                rate field shows a Done button above the decimal pad, and the ad banner hides while you edit.</p>
             <p><strong>Enhanced in 1.4.0:</strong> Category-specific filtering, preview functionality, comprehensive
                 error handling, and immediate UI updates after changes.</p>
         </div>
@@ -635,7 +685,11 @@
             <p>1. Go to Settings<br>
                 2. Select "Hourly Rate"<br>
                 3. Enter your rate (supports up to 2 decimal places)<br>
-                4. The rate will be applied to new entries automatically</p>
+                4. Tap Done above the number pad when finished<br>
+                5. The rate will be applied to new entries automatically</p>
+            <p><strong>New in 1.5.2:</strong> A Done button appears above the decimal pad for reliable keyboard
+                dismissal. The ad banner temporarily hides while you edit rates so it does not cover the keyboard or
+                Done button.</p>
             <p><strong>Enhanced:</strong> Better input validation and formatting for consistent rate entry.</p>
         </div>
 
@@ -663,7 +717,10 @@
                 3. Tap "Export Records"<br>
                 4. Choose export format (CSV, CSV Excel-compatible, or JSON)<br>
                 5. Choose time period filtering (last 7/30/90 days, this month/year, custom periods)<br>
-                6. Select categories to include in export</p>
+                6. Select categories to include in export<br>
+                7. Tap Export in the navigation bar</p>
+            <p><strong>New in 1.5.2:</strong> Export Options uses an Export button in the title bar (with an X to
+                dismiss) instead of a button at the bottom of the form.</p>
             <p><strong>New in 1.4.2:</strong> Export now supports multiple formats! Choose from CSV (standard), CSV
                 (Excel-compatible with UTF-8 BOM), or JSON format. All formats maintain data integrity and support all
                 existing features.</p>
@@ -683,6 +740,10 @@
                 5. The app generates a PDF with a summary (total duration and earnings), category breakdown, and
                 detailed entry table<br>
                 6. Use the share sheet to save to Files, print, or share with other apps</p>
+            <p><strong>New in 1.5.1:</strong> Customize which columns appear in your PDF. Go to Settings → PDF export
+                columns and toggle Date, Clock In, Clock Out, Duration, Break Time, and Category. At least one column
+                must remain visible. Related summary sections (total time, break time, or category breakdown) hide when
+                their matching column is turned off. Your choices are saved and apply the next time you export.</p>
             <p><strong>New in 1.4.6:</strong> The PDF reflects your current period and category filter. No time records
                 for the selected period? The button is still available; the PDF will show the empty state for that
                 period.</p>
@@ -725,10 +786,12 @@
                 3. Choose a time period (last 7/30/90 days, this month/year, custom period, or all records)<br>
                 4. Select category filtering (all categories or specific categories)<br>
                 5. Preview what will be deleted (entry count, total duration, total earnings)<br>
-                6. Confirm the action</p>
+                6. Tap Clear in the navigation bar to confirm</p>
             <p>This feature allows you to selectively delete records by time period and category, perfect for cleaning
                 up specific data without losing everything. You can preview exactly what will be deleted before
                 confirming.</p>
+            <p><strong>New in 1.5.2:</strong> Clear Options uses a Clear button in the title bar (with an X to dismiss)
+                instead of a button at the bottom of the form.</p>
             <p><strong>Enhanced in 1.4.1:</strong> Period and category filtering, real-time preview with statistics, and
                 improved error handling with detailed alerts for delete operations.</p>
         </div>
@@ -818,6 +881,15 @@
 
         <div class="faq-item">
             <h3>What's new in the interface?</h3>
+            <p><strong>Version 1.5.2 Improvements:</strong><br>
+                • Apple Watch Smart Stack widget for one-tap access to the Watch app<br>
+                • Done button above the decimal pad when editing hourly rates<br>
+                • Consistent form navigation: primary action and X dismiss in the title bar<br>
+                • Export and Clear actions moved to the navigation bar<br>
+                • Ad banner hides while editing rates with the number pad</p>
+            <p><strong>Version 1.5.1 Improvements:</strong><br>
+                • Customize PDF export columns in Settings (Date, Clock In, Clock Out, Duration, Break Time, Category)<br>
+                • PDF summary sections follow your column choices</p>
             <p><strong>Version 1.5.0 Improvements:</strong><br>
                 • Take a break while clocked in without stopping your session<br>
                 • Manual break intervals when adding or editing time entries<br>
@@ -888,9 +960,24 @@
                 5. Your status syncs automatically with your iPhone in real-time</p>
             <p><strong>Features:</strong> Real-time duration display, connection status indicator, automatic
                 synchronization, and error handling with user-friendly messages.</p>
+            <p><strong>New in 1.5.2:</strong> Add CluckOut to your Apple Watch Smart Stack for quick access. Tap the
+                widget (rectangular or circular) to open the Watch app—ideal for clocking in, taking a break, or
+                checking your session. Requires watchOS 10 or later.</p>
             <p><strong>New in 1.5.0:</strong> Take a break and resume work directly from your Apple Watch while checked
                 in. The watch shows on-break status (orange), work duration, and live break time synced with your
                 iPhone.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I add CluckOut to the Apple Watch Smart Stack?</h3>
+            <p>1. On your Apple Watch, open the Smart Stack (turn the Digital Crown up from the watch face)<br>
+                2. Scroll to the bottom and tap Edit Widgets (or long-press a widget and choose Edit Widgets)<br>
+                3. Tap the + button and select CluckOut<br>
+                4. Choose a rectangular or circular layout<br>
+                5. Tap Done—then tap the widget anytime to open CluckOut</p>
+            <p><strong>New in 1.5.2:</strong> The Smart Stack widget launches the Watch app with one tap. It does not
+                show live status or timers—use the Watch app itself for clock in/out and breaks. Requires watchOS 10 or
+                later.</p>
         </div>
 
         <div class="faq-item">
@@ -906,8 +993,8 @@
 
         <div class="faq-item">
             <h3>What Apple Watch models are supported?</h3>
-            <p>CluckOut supports Apple Watch Series 3 and later running watchOS 8.0 or later. The watch app requires a
-                paired iPhone with the CluckOut app installed.</p>
+            <p>CluckOut requires Apple Watch running watchOS 10.0 or later (updated in 1.5.2 for Smart Stack widget
+                support). The watch app requires a paired iPhone with the CluckOut app installed.</p>
         </div>
 
         <div class="faq-item">
