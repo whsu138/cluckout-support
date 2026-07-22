@@ -106,6 +106,58 @@
     <h1>CluckOut Support</h1>
 
     <div class="version-info">
+        <h2>What's New in Version 1.5.4</h2>
+        <div class="feature-highlight">
+            <strong>🕐 Redesigned Clock</strong>
+            <p>A clearer live session: Working or On Break status with category and clock-in time, a large hero timer,
+                and side-by-side work duration with estimated pay. While on break, the hero shows break time and metrics
+                show Work so far.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>⚠️ Overlap Detection</strong>
+            <p>Add or edit an entry that conflicts with another record and CluckOut blocks the save with a clear
+                message. Back-to-back ranges (one ends when the next starts) are fine. Overlapping rows are flagged in
+                Summary, with a note when totals may count overlapping time more than once.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>✏️ Smarter Entry Forms</strong>
+            <p>Validation banners call out clock order, break issues, and overlaps. Duration and pay preview as you
+                edit. Rate fields show From category or Custom. Move check-in and breaks keep their relative offsets;
+                change check-out and breaks clamp into the session.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>💾 Backup &amp; Restore</strong>
+            <p>Save a full backup of your records, preferences, and categories—or any combination—then restore later.
+                Preferences and categories replace what's on the device; records merge and skip duplicates. Find it in
+                Settings → Backup &amp; Restore. Backup is unavailable while a clock session is active.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>🔔 Still Clocked In Reminder</strong>
+            <p>Forgot to clock out? In Settings → Reminders, turn on Remind Me If Still Clocked In, set your usual end
+                time, and choose how often to repeat. If you are still clocked in past that time, CluckOut notifies
+                you—and keeps reminding you until you clock out.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>☕ Long Break Reminder</strong>
+            <p>Break running long? Turn on Remind Me If Break Runs Long, choose how long before the first nudge (30, 45,
+                60, or 90 minutes, or Custom from 1–240 minutes), and how often to repeat. You'll get a "Still on break?"
+                notification after your break exceeds that time, then again until you resume work or clock out.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>📅 Summary Filter Toolbar</strong>
+            <p>Pick a day, week, month, or year from a compact toolbar on Summary. Tap the calendar for a full calendar
+                view with a clear Day/Week/Month/Year control, jump to Today / This Week / This Month / This Year, and
+                filter by category from the same bar.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>📊 Metric Carousel &amp; Layout Polish</strong>
+            <p>On Summary, Total Time and Estimated Pay swipe as carousel pages (with page dots). Settings and Clock
+                screens reserve space for the ad banner so footers and controls are no longer covered when you scroll.
+                Summary updates category breakdown and time records right after you save an edit.</p>
+        </div>
+    </div>
+
+    <div class="version-info">
         <h2>What's New in Version 1.5.2</h2>
         <div class="feature-highlight">
             <strong>⌚ Apple Watch Smart Stack Widget</strong>
@@ -143,33 +195,36 @@
         </div>
     </div>
 
-    <div class="version-info">
-        <h2>What's New in Version 1.5.0</h2>
-        <div class="feature-highlight">
-            <strong>☕ Break / Pause Timer</strong>
-            <p>Take a break while you're clocked in without losing your session! Tap "Take a Break" on the Clock tab to
-                pause your work timer, then tap "Resume Work" when you're ready. Your work duration stops during breaks,
-                and a live break timer shows how long you've been on break—so earnings reflect actual work time, not
-                lunch or coffee breaks.</p>
+    <details>
+        <summary style="font-size: 1.2em; color: #2c3e50;">What's New in Version 1.5.0</summary>
+        <div class="version-info">
+            <h2>What's New in Version 1.5.0</h2>
+            <div class="feature-highlight">
+                <strong>☕ Break / Pause Timer</strong>
+                <p>Take a break while you're clocked in without losing your session! Tap "Take a Break" on the Clock tab
+                    to pause your work timer, then tap "Resume Work" when you're ready. Your work duration stops during
+                    breaks, and a live break timer shows how long you've been on break—so earnings reflect actual work
+                    time, not lunch or coffee breaks.</p>
+            </div>
+            <div class="feature-highlight">
+                <strong>✏️ Manual Break Intervals</strong>
+                <p>When adding or editing a time entry, you can record one or more break intervals with start and end
+                    times. The app shows total break time and work duration, and validates that breaks fall within your
+                    check-in/check-out window.</p>
+            </div>
+            <div class="feature-highlight">
+                <strong>📊 CSV &amp; PDF Break Reporting</strong>
+                <p>Exported CSV files now include a Break Time column alongside work duration. Import preserves your
+                    check-in and check-out times and break totals. Time records PDFs also show break time in the summary
+                    and entry table when breaks are present.</p>
+            </div>
+            <div class="feature-highlight">
+                <strong>⌚ Apple Watch Break Support</strong>
+                <p>Start and end breaks from your Apple Watch while checked in. The watch shows on-break status, your
+                    work duration, and live break time—synced with your iPhone in real time.</p>
+            </div>
         </div>
-        <div class="feature-highlight">
-            <strong>✏️ Manual Break Intervals</strong>
-            <p>When adding or editing a time entry, you can record one or more break intervals with start and end times.
-                The app shows total break time and work duration, and validates that breaks fall within your
-                check-in/check-out window.</p>
-        </div>
-        <div class="feature-highlight">
-            <strong>📊 CSV &amp; PDF Break Reporting</strong>
-            <p>Exported CSV files now include a Break Time column alongside work duration. Import preserves your
-                check-in and check-out times and break totals. Time records PDFs also show break time in the summary and
-                entry table when breaks are present.</p>
-        </div>
-        <div class="feature-highlight">
-            <strong>⌚ Apple Watch Break Support</strong>
-            <p>Start and end breaks from your Apple Watch while checked in. The watch shows on-break status, your work
-                duration, and live break time—synced with your iPhone in real time.</p>
-        </div>
-    </div>
+    </details>
 
     <details>
         <summary style="font-size: 1.2em; color: #2c3e50;">What's New in Version 1.4.6</summary>
@@ -582,6 +637,9 @@
             <p><strong>New in 1.4.3:</strong> Full Apple Watch support allows you to track time from your wrist with
                 real-time synchronization between devices. Perfect for quick clock in/out without reaching for your
                 phone.</p>
+            <p><strong>New in 1.5.4:</strong> The Clock screen shows Working or On Break status, a large hero timer, and
+                side-by-side work duration with estimated pay. While on break, the hero shows break time and metrics show
+                Work so far.</p>
             <p><strong>New in 1.5.0:</strong> Take a break while clocked in without stopping your session. Tap "Take a
                 Break" to pause your work timer, then "Resume Work" when you're ready. Work duration automatically
                 excludes break time for accurate earnings.</p>
@@ -606,6 +664,8 @@
                 3. In the Breaks section, add one or more break intervals with start and end times<br>
                 4. The app shows total break time and work duration as you edit<br>
                 5. Tap Save</p>
+            <p><strong>New in 1.5.4:</strong> Moving check-in shifts breaks by the same offset; changing check-out clamps
+                breaks into the session window. Validation banners call out break issues before you save.</p>
             <p><strong>New in 1.5.0:</strong> Break intervals must fall within your check-in/check-out window. Work
                 duration is calculated as session time minus break time. Imported records with break totals show a
                 read-only break summary when editing (no interval history).</p>
@@ -617,6 +677,9 @@
                 2. Tap on the entry you want to edit<br>
                 3. Modify the clock-in/clock-out times with second-level precision<br>
                 4. Tap Save in the navigation bar</p>
+            <p><strong>New in 1.5.4:</strong> Overlapping ranges are blocked with a clear banner. Duration and pay
+                preview as you edit; rate fields show From category or Custom. Summary category breakdown and rows
+                refresh immediately after you save.</p>
             <p><strong>New in 1.5.2:</strong> Edit Entry uses a title-bar Save button with an X to dismiss. Rate fields
                 show a Done button above the decimal pad.</p>
             <p><strong>Improved:</strong> Edit interface now supports more precise time adjustments and provides better
@@ -630,6 +693,8 @@
                 3. Enter clock-in and clock-out times with second-level precision<br>
                 4. Set the hourly rate for this entry (tap Done above the number pad when finished)<br>
                 5. Tap Add in the navigation bar to save</p>
+            <p><strong>New in 1.5.4:</strong> If the range overlaps an existing record, a banner blocks save until you
+                adjust the times. Back-to-back ranges are allowed. Duration and pay preview as you edit.</p>
             <p><strong>New in 1.5.2:</strong> Add Entry uses a title-bar Add button with an X to dismiss, matching
                 other forms. Rate fields show a Done button above the decimal pad.</p>
             <p><strong>Enhanced:</strong> Manual entry now supports more precise time input and better rate management.
@@ -734,8 +799,8 @@
         <div class="faq-item">
             <h3>How do I print or share time records as PDF?</h3>
             <p>1. Go to the Summary tab<br>
-                2. Choose your time frame (day, week, month, or year) and date using the date navigator<br>
-                3. Optionally filter by category using the category selector<br>
+                2. Choose your time frame (day, week, month, or year) and date from the filter toolbar<br>
+                3. Optionally filter by category from the same toolbar<br>
                 4. In the time records section, tap the "Print time records as PDF" button (printer icon)<br>
                 5. The app generates a PDF with a summary (total duration and earnings), category breakdown, and
                 detailed entry table<br>
@@ -799,12 +864,28 @@
         <div class="faq-item">
             <h3>How do I navigate through my time records?</h3>
             <p>1. Go to the Summary tab<br>
-                2. Use the date navigator to browse different time periods<br>
-                3. Tap on time frame options to filter records (Day, Week, Month, or Year)</p>
+                2. Use the filter toolbar to pick Day, Week, Month, or Year<br>
+                3. Tap the calendar control for a full calendar view, or jump to Today / This Week / This Month / This
+                Year<br>
+                4. Filter by category from the same toolbar</p>
+            <p><strong>New in 1.5.4:</strong> A compact Summary filter toolbar replaces the older Time Frame card. The
+                calendar sheet includes a clear Day/Week/Month/Year control and quick jumps to the current period.</p>
             <p><strong>New in 1.4.2:</strong> Added "Year" time frame option! View all entries from January 1st to
                 December 31st of the selected year with quick navigation to current year.</p>
             <p><strong>Improved in 1.2.0:</strong> Enhanced date navigation with better browsing experience and improved
                 time frame selection.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I back up or restore my data?</h3>
+            <p>1. Go to Settings → Backup &amp; Restore<br>
+                2. Choose what to include: Records, Preferences, and/or Categories<br>
+                3. Tap to create a JSON backup file you can save or share<br>
+                4. To restore, open a backup file and confirm—preferences and categories replace what's on the device;
+                records merge and skip duplicates</p>
+            <p><strong>New in 1.5.4:</strong> Manual JSON backup of records, preferences, and categories. Backup &amp;
+                Restore is disabled while a clock session is active (same guard as Records Management). Backups are
+                local files only—there is no iCloud sync.</p>
         </div>
     </section>
 
@@ -818,9 +899,34 @@
                 3. If notification permission is not granted, tap "Request Notification Permission"<br>
                 4. Allow notifications when prompted<br>
                 5. Enable reminders and set your preferred times</p>
+            <p><strong>New in 1.5.4:</strong> Optional session reminders: Remind Me If Still Clocked In (usual end time +
+                repeat) and Remind Me If Break Runs Long (threshold + repeat). See the questions below for details.</p>
             <p><strong>Enhanced in 1.3.2:</strong> Complete reminder system overhaul with flexible scheduling! You can
                 now create repeatable reminders for specific days of the week, edit existing reminders, and enjoy
                 intelligent reminder behavior.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I get reminded if I forget to clock out?</h3>
+            <p>1. Go to Settings → Reminders<br>
+                2. Turn on Remind Me If Still Clocked In<br>
+                3. Set your Usual End Time and how often to Repeat Every (1–4 hours)<br>
+                4. Clock in as usual—if you are still clocked in past that time, you'll get a "Still clocked in?"
+                notification that repeats until you clock out</p>
+            <p><strong>New in 1.5.4:</strong> Reminders are scheduled on clock-in and cancelled on clock-out. They are
+                also reconciled when you reopen the app if you are still checked in.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I get reminded if a break runs long?</h3>
+            <p>1. Go to Settings → Reminders<br>
+                2. Turn on Remind Me If Break Runs Long<br>
+                3. Choose Remind After (30, 45, 60, or 90 minutes, or Custom from 1–240 minutes) and Repeat Every (15, 30,
+                45, or 60 minutes)<br>
+                4. Clock in, then Take a Break—after the threshold you'll get a "Still on break?" notification that
+                repeats until you Resume Work or Clock Out</p>
+            <p><strong>New in 1.5.4:</strong> Long break reminders are scheduled when you take a break and cancelled when
+                you resume or clock out.</p>
         </div>
 
         <div class="faq-item">
@@ -881,6 +987,15 @@
 
         <div class="faq-item">
             <h3>What's new in the interface?</h3>
+            <p><strong>Version 1.5.4 Improvements:</strong><br>
+                • Redesigned Clock with Working/On Break status, hero timer, and side-by-side metrics<br>
+                • Overlap detection on Add/Edit with Summary overlap badges and statistics footnote<br>
+                • Smarter entry forms: validation banners, duration/pay preview, rate source labels<br>
+                • Backup &amp; Restore for records, preferences, and categories<br>
+                • Still Clocked In and Long Break reminders<br>
+                • Summary filter toolbar with calendar sheet and category filter<br>
+                • Metric carousel for Total Time and Estimated Pay<br>
+                • Ad banner safe area on Clock and Settings so footers stay visible</p>
             <p><strong>Version 1.5.2 Improvements:</strong><br>
                 • Apple Watch Smart Stack widget for one-tap access to the Watch app<br>
                 • Done button above the decimal pad when editing hourly rates<br>
@@ -940,7 +1055,11 @@
             <h3>How do I view my statistics?</h3>
             <p>1. Go to the Summary tab<br>
                 2. View your time tracking statistics<br>
-                3. See estimated earnings based on your rates</p>
+                3. Swipe between Total Time and Estimated Pay in the metric carousel<br>
+                4. See estimated earnings based on your rates</p>
+            <p><strong>New in 1.5.4:</strong> Total Time and Estimated Pay are swipeable carousel pages with page dots.
+                If overlapping records exist in the period, a Statistics footnote notes that totals may count
+                overlapping time more than once.</p>
             <p><strong>Enhanced:</strong> Statistics now calculate earnings using individual entry rates with improved
                 accuracy and real-time updates.</p>
         </div>
@@ -993,8 +1112,9 @@
 
         <div class="faq-item">
             <h3>What Apple Watch models are supported?</h3>
-            <p>CluckOut requires Apple Watch running watchOS 10.0 or later (updated in 1.5.2 for Smart Stack widget
-                support). The watch app requires a paired iPhone with the CluckOut app installed.</p>
+            <p>The CluckOut Watch app requires Apple Watch running watchOS 8.0 or later (restored in 1.5.4). The Smart
+                Stack widget still requires watchOS 10.0 or later. The watch app requires a paired iPhone with the
+                CluckOut app installed.</p>
         </div>
 
         <div class="faq-item">
