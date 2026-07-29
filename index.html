@@ -106,6 +106,16 @@
     <h1>CluckOut Support</h1>
 
     <div class="version-info">
+        <h2>What's New in Version 1.5.5</h2>
+        <div class="feature-highlight">
+            <strong>💾 Backup Files Use .json</strong>
+            <p>When you create a backup in Settings → Backup &amp; Restore, the default filename now ends with
+                .json (for example, cluckout_backup_2026-07-22.json) so Files and other apps recognize it as
+                JSON. Restore and backup content are unchanged.</p>
+        </div>
+    </div>
+
+    <div class="version-info">
         <h2>What's New in Version 1.5.4</h2>
         <div class="feature-highlight">
             <strong>🕐 Redesigned Clock</strong>
@@ -157,43 +167,50 @@
         </div>
     </div>
 
-    <div class="version-info">
-        <h2>What's New in Version 1.5.2</h2>
-        <div class="feature-highlight">
-            <strong>⌚ Apple Watch Smart Stack Widget</strong>
-            <p>Add CluckOut to your Apple Watch Smart Stack for quick access. Tap the widget to open the CluckOut app on
-                your wrist—perfect when you want to clock in, take a break, or check your session without hunting
-                through your apps. Available in rectangular and circular Smart Stack layouts on watchOS 10 and later.</p>
+    <details>
+        <summary style="font-size: 1.2em; color: #2c3e50;">What's New in Version 1.5.2</summary>
+        <div class="version-info">
+            <h2>What's New in Version 1.5.2</h2>
+            <div class="feature-highlight">
+                <strong>⌚ Apple Watch Smart Stack Widget</strong>
+                <p>Add CluckOut to your Apple Watch Smart Stack for quick access. Tap the widget to open the CluckOut app
+                    on your wrist—perfect when you want to clock in, take a break, or check your session without hunting
+                    through your apps. Available in rectangular and circular Smart Stack layouts on watchOS 10 and
+                    later.</p>
+            </div>
+            <div class="feature-highlight">
+                <strong>⌨️ Easier Hourly Rate Entry</strong>
+                <p>Editing hourly rates is smoother across the app. A Done button appears above the number pad when you
+                    enter rates in Settings, category rates, batch rate updates, and manual add or edit entry forms.</p>
+            </div>
+            <div class="feature-highlight">
+                <strong>🧭 Consistent Form Navigation</strong>
+                <p>Add Entry, Edit Entry, batch rate updates, category rates, export, and clear records now use the same
+                    title-bar layout as Add Category—primary action on the right with an X to dismiss. Export and Clear
+                    moved from the bottom of the screen to Export and Clear in the navigation bar.</p>
+            </div>
+            <div class="feature-highlight">
+                <strong>📱 Smarter Ad Banner During Rate Entry</strong>
+                <p>When you edit hourly rates with the number pad, the ad banner temporarily hides so it does not cover
+                    the keyboard or Done button. The banner returns when you tap Done.</p>
+            </div>
         </div>
-        <div class="feature-highlight">
-            <strong>⌨️ Easier Hourly Rate Entry</strong>
-            <p>Editing hourly rates is smoother across the app. A Done button appears above the number pad when you
-                enter rates in Settings, category rates, batch rate updates, and manual add or edit entry forms.</p>
-        </div>
-        <div class="feature-highlight">
-            <strong>🧭 Consistent Form Navigation</strong>
-            <p>Add Entry, Edit Entry, batch rate updates, category rates, export, and clear records now use the same
-                title-bar layout as Add Category—primary action on the right with an X to dismiss. Export and Clear
-                moved from the bottom of the screen to Export and Clear in the navigation bar.</p>
-        </div>
-        <div class="feature-highlight">
-            <strong>📱 Smarter Ad Banner During Rate Entry</strong>
-            <p>When you edit hourly rates with the number pad, the ad banner temporarily hides so it does not cover the
-                keyboard or Done button. The banner returns when you tap Done.</p>
-        </div>
-    </div>
+    </details>
 
-    <div class="version-info">
-        <h2>What's New in Version 1.5.1</h2>
-        <div class="feature-highlight">
-            <strong>📄 Customize PDF Export Columns</strong>
-            <p>Choose which columns appear when you print or share time records as PDF. Open Settings → PDF export
-                columns to show or hide Date, Clock In, Clock Out, Duration, Break Time, and Category. Your choices are
-                saved automatically and apply the next time you export from Summary. Related summary sections (such as
-                total time, break time, or category breakdown) are hidden when their matching column is turned
-                off—so your PDF stays focused on what you need.</p>
+    <details>
+        <summary style="font-size: 1.2em; color: #2c3e50;">What's New in Version 1.5.1</summary>
+        <div class="version-info">
+            <h2>What's New in Version 1.5.1</h2>
+            <div class="feature-highlight">
+                <strong>📄 Customize PDF Export Columns</strong>
+                <p>Choose which columns appear when you print or share time records as PDF. Open Settings → PDF export
+                    columns to show or hide Date, Clock In, Clock Out, Duration, Break Time, and Category. Your choices
+                    are saved automatically and apply the next time you export from Summary. Related summary sections
+                    (such as total time, break time, or category breakdown) are hidden when their matching column is
+                    turned off—so your PDF stays focused on what you need.</p>
+            </div>
         </div>
-    </div>
+    </details>
 
     <details>
         <summary style="font-size: 1.2em; color: #2c3e50;">What's New in Version 1.5.0</summary>
@@ -883,6 +900,8 @@
                 3. Tap to create a JSON backup file you can save or share<br>
                 4. To restore, open a backup file and confirm—preferences and categories replace what's on the device;
                 records merge and skip duplicates</p>
+            <p><strong>New in 1.5.5:</strong> The default backup filename now ends with .json (for example,
+                cluckout_backup_2026-07-22.json) so Files and other apps recognize it as JSON.</p>
             <p><strong>New in 1.5.4:</strong> Manual JSON backup of records, preferences, and categories. Backup &amp;
                 Restore is disabled while a clock session is active (same guard as Records Management). Backups are
                 local files only—there is no iCloud sync.</p>
@@ -987,6 +1006,8 @@
 
         <div class="faq-item">
             <h3>What's new in the interface?</h3>
+            <p><strong>Version 1.5.5 Improvements:</strong><br>
+                • Backup &amp; Restore default filenames now end with .json so Files recognizes them as JSON</p>
             <p><strong>Version 1.5.4 Improvements:</strong><br>
                 • Redesigned Clock with Working/On Break status, hero timer, and side-by-side metrics<br>
                 • Overlap detection on Add/Edit with Summary overlap badges and statistics footnote<br>
