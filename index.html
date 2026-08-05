@@ -106,6 +106,50 @@
     <h1>CluckOut Support</h1>
 
     <div class="version-info">
+        <h2>What's New in Version 1.5.6</h2>
+        <div class="feature-highlight">
+            <strong>📍 Workplaces</strong>
+            <p>Tag where you worked. In Settings → Manage Workplaces, add Home, client sites, and other places.
+                Choose Quiet (tag only) or Suggest (optional arrive/leave nudges). Set an optional default category
+                and map pin. Pick a place when you clock in, change it mid-session, or attach it on Add/Edit Entry.
+                Filter Summary by All Places, Untagged, or a specific place. CSV includes a Workplace column; PDF can
+                show Workplace when you enable it under PDF export columns. Backup &amp; Restore can include
+                workplaces. Workplaces are iPhone-only.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>🔔 Suggest Nudges (Optional)</strong>
+            <p>Suggest places can notify you when you arrive or leave while still clocked in. Tapping a nudge opens
+                Clock and prefills that place—CluckOut never auto clocks in or out. Requires Always location access
+                and notification permission. Quiet places never send nudges.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>🕐 Clearer Clock</strong>
+            <p>Idle Clock shows today’s date, a labeled Category (and Workplace when you have places) card, and a
+                short “Tracking …” hint under Clock In. Your last category and workplace are remembered. During a
+                session, category and workplace sit side by side as chips; the hero timer stays front and center, with
+                Estimated Pay underneath when a rate is set. On break, the hero shows break time and metrics show Work
+                so far.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>✅ Confirmation Toasts</strong>
+            <p>Quick, auto-dismissing confirmation after you add, edit, or delete time records, reminders, categories,
+                and workplaces; and after you save your default or category hourly rates—including when you swipe to
+                delete.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>📊 Clearer Summary &amp; Forms</strong>
+            <p>Time Records show category name, a simple time range, and a duration pill; the full date appears only
+                when the day changes. The Summary filter uses a full-width period control with equal Category and
+                Location filters. Help text for breaks, rates, and batch updates sits as section footers. Category
+                rates align right and keep two decimals after editing.</p>
+        </div>
+        <div class="feature-highlight">
+            <strong>🎨 Fresh App Icon</strong>
+            <p>Updated CluckOut icon on iPhone and Apple Watch.</p>
+        </div>
+    </div>
+
+    <div class="version-info">
         <h2>What's New in Version 1.5.5</h2>
         <div class="feature-highlight">
             <strong>💾 Backup Files Use .json</strong>
@@ -654,12 +698,41 @@
             <p><strong>New in 1.4.3:</strong> Full Apple Watch support allows you to track time from your wrist with
                 real-time synchronization between devices. Perfect for quick clock in/out without reaching for your
                 phone.</p>
+            <p><strong>New in 1.5.6:</strong> Idle Clock shows today’s date, a labeled Category (and Workplace when you
+                have places) card, and a “Tracking …” hint. Your last category and workplace are remembered. During a
+                session, category and workplace appear as side-by-side chips; Estimated Pay sits under the hero timer when
+                a rate is set.</p>
             <p><strong>New in 1.5.4:</strong> The Clock screen shows Working or On Break status, a large hero timer, and
                 side-by-side work duration with estimated pay. While on break, the hero shows break time and metrics show
                 Work so far.</p>
             <p><strong>New in 1.5.0:</strong> Take a break while clocked in without stopping your session. Tap "Take a
                 Break" to pause your work timer, then "Resume Work" when you're ready. Work duration automatically
                 excludes break time for accurate earnings.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I use Workplaces?</h3>
+            <p><strong>New in 1.5.6:</strong><br>
+                1. Go to Settings → Manage Workplaces<br>
+                2. Add places such as Home, client sites, or other locations<br>
+                3. Choose Quiet (tag only) or Suggest (optional arrive/leave nudges)<br>
+                4. Optionally set a default category and a map pin<br>
+                5. When you clock in (or on Add/Edit Entry), pick a place—or None<br>
+                6. Change workplace mid-session from the Clock chips if needed<br>
+                7. On Summary, filter by All Places, Untagged, or a specific place</p>
+            <p>Selecting a place applies its default category when one is set. Soft-deleting a place removes it from
+                pickers; existing entries keep their place tag. Workplaces are available on iPhone only (not on Apple
+                Watch).</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do Suggest workplace nudges work?</h3>
+            <p><strong>New in 1.5.6:</strong> Suggest places can notify you when you arrive (while idle) or leave (while
+                clocked in). Tapping a nudge opens Clock and prefills that place—and its default category if set.
+                CluckOut never auto clocks in or out.</p>
+            <p>Suggest mode requires Always location access and notification permission. Quiet places never send
+                nudges. There is a cooldown between nudges for the same place and event, and iOS limits how many Suggest
+                regions can be monitored at once.</p>
         </div>
 
         <div class="faq-item">
@@ -694,6 +767,8 @@
                 2. Tap on the entry you want to edit<br>
                 3. Modify the clock-in/clock-out times with second-level precision<br>
                 4. Tap Save in the navigation bar</p>
+            <p><strong>New in 1.5.6:</strong> Optionally attach a workplace. A confirmation toast appears after you save
+                or delete. Break help text appears as a section footer under Add Break.</p>
             <p><strong>New in 1.5.4:</strong> Overlapping ranges are blocked with a clear banner. Duration and pay
                 preview as you edit; rate fields show From category or Custom. Summary category breakdown and rows
                 refresh immediately after you save.</p>
@@ -710,6 +785,8 @@
                 3. Enter clock-in and clock-out times with second-level precision<br>
                 4. Set the hourly rate for this entry (tap Done above the number pad when finished)<br>
                 5. Tap Add in the navigation bar to save</p>
+            <p><strong>New in 1.5.6:</strong> Optionally attach a workplace (selecting a place can apply its default
+                category). A confirmation toast appears after you add the entry.</p>
             <p><strong>New in 1.5.4:</strong> If the range overlaps an existing record, a banner blocks save until you
                 adjust the times. Back-to-back ranges are allowed. Duration and pay preview as you edit.</p>
             <p><strong>New in 1.5.2:</strong> Add Entry uses a title-bar Add button with an X to dismiss, matching
@@ -769,6 +846,8 @@
                 3. Enter your rate (supports up to 2 decimal places)<br>
                 4. Tap Done above the number pad when finished<br>
                 5. The rate will be applied to new entries automatically</p>
+            <p><strong>New in 1.5.6:</strong> A confirmation toast appears after you save your default rate. Help text
+                for the default rate sits as a section footer.</p>
             <p><strong>New in 1.5.2:</strong> A Done button appears above the decimal pad for reliable keyboard
                 dismissal. The ad banner temporarily hides while you edit rates so it does not cover the keyboard or
                 Done button.</p>
@@ -806,6 +885,8 @@
             <p><strong>New in 1.4.2:</strong> Export now supports multiple formats! Choose from CSV (standard), CSV
                 (Excel-compatible with UTF-8 BOM), or JSON format. All formats maintain data integrity and support all
                 existing features.</p>
+            <p><strong>New in 1.5.6:</strong> CSV export includes a Workplace column so you can see where each entry was
+                tagged.</p>
             <p><strong>New in 1.5.0:</strong> CSV export now includes a Break Time column alongside work duration.
                 Break time and work duration are stored separately for accurate reporting.</p>
             <p><strong>Enhanced in 1.4.0:</strong> Export includes flexible time period filtering, progress
@@ -822,6 +903,8 @@
                 5. The app generates a PDF with a summary (total duration and earnings), category breakdown, and
                 detailed entry table<br>
                 6. Use the share sheet to save to Files, print, or share with other apps</p>
+            <p><strong>New in 1.5.6:</strong> PDF export columns include an optional Workplace column (off by default for
+                existing users). Turn it on under Settings → PDF export columns.</p>
             <p><strong>New in 1.5.1:</strong> Customize which columns appear in your PDF. Go to Settings → PDF export
                 columns and toggle Date, Clock In, Clock Out, Duration, Break Time, and Category. At least one column
                 must remain visible. Related summary sections (total time, break time, or category breakdown) hide when
@@ -842,6 +925,8 @@
             <p><strong>New in 1.4.2:</strong> Import now supports multiple file formats! The app automatically detects
                 the format based on file extension (.csv, .xlsx, .xls, .json). Supports CSV files, Excel-compatible
                 files with UTF-8 BOM handling, and JSON files with DataFrame format.</p>
+            <p><strong>New in 1.5.6:</strong> CSV import resolves the Workplace column by place name when a matching
+                workplace exists.</p>
             <p><strong>New in 1.5.0:</strong> CSV import preserves check-in and check-out times when a Break Time
                 column is present (no recalculation from duration). Legacy CSV files without a Break Time column still
                 import correctly. Imported records with break totals show a read-only break summary when editing.</p>
@@ -884,7 +969,11 @@
                 2. Use the filter toolbar to pick Day, Week, Month, or Year<br>
                 3. Tap the calendar control for a full calendar view, or jump to Today / This Week / This Month / This
                 Year<br>
-                4. Filter by category from the same toolbar</p>
+                4. Filter by category from the same toolbar<br>
+                5. When you have workplaces, filter by All Places, Untagged, or a specific place</p>
+            <p><strong>New in 1.5.6:</strong> The period control is full width on its own row; Category and Location
+                filters share equal width on the second row. Time Records show category name, a simple time range, and a
+                duration pill—the full date appears only when the day changes.</p>
             <p><strong>New in 1.5.4:</strong> A compact Summary filter toolbar replaces the older Time Frame card. The
                 calendar sheet includes a clear Day/Week/Month/Year control and quick jumps to the current period.</p>
             <p><strong>New in 1.4.2:</strong> Added "Year" time frame option! View all entries from January 1st to
@@ -896,10 +985,12 @@
         <div class="faq-item">
             <h3>How do I back up or restore my data?</h3>
             <p>1. Go to Settings → Backup &amp; Restore<br>
-                2. Choose what to include: Records, Preferences, and/or Categories<br>
+                2. Choose what to include: Records, Preferences, Categories, and/or Workplaces<br>
                 3. Tap to create a JSON backup file you can save or share<br>
-                4. To restore, open a backup file and confirm—preferences and categories replace what's on the device;
-                records merge and skip duplicates</p>
+                4. To restore, open a backup file and confirm—preferences, categories, and workplaces replace what's on
+                the device; records merge and skip duplicates</p>
+            <p><strong>New in 1.5.6:</strong> Backup &amp; Restore includes an optional Workplaces toggle. Restoring
+                workplaces replaces the places on the device.</p>
             <p><strong>New in 1.5.5:</strong> The default backup filename now ends with .json (for example,
                 cluckout_backup_2026-07-22.json) so Files and other apps recognize it as JSON.</p>
             <p><strong>New in 1.5.4:</strong> Manual JSON backup of records, preferences, and categories. Backup &amp;
@@ -1006,6 +1097,13 @@
 
         <div class="faq-item">
             <h3>What's new in the interface?</h3>
+            <p><strong>Version 1.5.6 Improvements:</strong><br>
+                • Workplaces with Quiet/Suggest modes, Summary Location filter, and CSV/PDF workplace fields<br>
+                • Optional Suggest arrive/leave nudges that never auto clock in or out<br>
+                • Clearer Clock with labeled filters, session chips, and remembered last selections<br>
+                • Confirmation toasts after add/edit/delete and rate saves<br>
+                • Clearer Summary rows and filter toolbar; form help as section footers<br>
+                • Fresh app icon on iPhone and Apple Watch</p>
             <p><strong>Version 1.5.5 Improvements:</strong><br>
                 • Backup &amp; Restore default filenames now end with .json so Files recognizes them as JSON</p>
             <p><strong>Version 1.5.4 Improvements:</strong><br>
@@ -1100,6 +1198,8 @@
                 5. Your status syncs automatically with your iPhone in real-time</p>
             <p><strong>Features:</strong> Real-time duration display, connection status indicator, automatic
                 synchronization, and error handling with user-friendly messages.</p>
+            <p><strong>New in 1.5.6:</strong> The Watch app icon is refreshed. Workplaces are managed and selected on
+                iPhone only; the Watch app does not include workplace UI.</p>
             <p><strong>New in 1.5.2:</strong> Add CluckOut to your Apple Watch Smart Stack for quick access. Tap the
                 widget (rectangular or circular) to open the Watch app—ideal for clocking in, taking a break, or
                 checking your session. Requires watchOS 10 or later.</p>
